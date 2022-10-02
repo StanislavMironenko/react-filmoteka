@@ -1,13 +1,12 @@
-import '../../css/navigation.css'
+import '../../sass/components/_navigation.scss'
 
 
 
 export function Navigation() {
-    return <div >
-    <nav id="nav" className="nav header__nav header__nav--home">
+    return  <nav id="NAV" className="nav header__nav header__nav--home">
       <a className="logo" href="./index.html">
         <svg className="logo__icon" aria-label="Logo">
-          <use className="icon-film" href="./img/icons.svg#icon-film"></use>
+          <use className="icon-film" href="../../img/icons.svg#icon-film"></use>
         </svg>
         <span className="logo__title">Filmoteka</span>
       </a>
@@ -30,8 +29,6 @@ export function Navigation() {
           </button>
         </li>
       </ul>
-    </nav>
-
-    
-  </div>
+    </nav>    
+ 
 }

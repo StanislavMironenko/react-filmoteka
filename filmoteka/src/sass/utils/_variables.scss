@@ -1,0 +1,30 @@
+$primary-text-color: #000;
+$secondary-text-color: #fff;
+$footer-text-color: #545454;
+$accent-text-color: #FF6B08;
+
+$error-text-color: #FF001B;
+$hover-text-color: #918c8d;
+
+$primary-brg-color: #fff;
+$header-bgr-color: #000;
+$footer-brg-color: #F7F7F7;
+
+$primary-border-color: #fff;
+$accent-border-color: #FF001B;
+
+$btn-accent-color: #FF6B01;
+$btn-accent-hover-color: #e15f03;
+$btn-hover-color: rgba(255, 255, 255, 0.2);
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+  font-family: 'Roboto', 'sans-serif';
+  background-color: $primary-brg-color;
+  color: $primary-text-color;
+  font-size: 14px;
+  line-height: 1.14;
+
+  overflow-x: hidden;
+}

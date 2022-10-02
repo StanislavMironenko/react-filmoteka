@@ -1,0 +1,29 @@
+// MIXINS START
+@import './mixins/breakpoints';
+@import './mixins/ratio';
+// MIXINS END
+
+// ULITLS START
+@import './utils/variables';
+@import './utils/common';
+@import './utils/container';
+@import './utils/visually-hidden';
+// UTILS END
+
+// COMPONTENTS START
+@import './components/header';
+@import './components/home';
+@import './components/pagination';
+@import './components/footer';
+@import './components/movie-modal';
+@import './components/modal-film';
+@import './components/youtube';
+@import './components/scrolling-up-button';
+@import './components/footer-modal';
+@import './components/registration-modal.scss';
+@import './components/library';
+// COMPONENTS END
+
+// THEME START
+@import './utils/theme'
+// THEME END

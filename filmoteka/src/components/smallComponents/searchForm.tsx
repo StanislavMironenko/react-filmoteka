@@ -1,6 +1,7 @@
 import React from "react";
+import '../../sass/components/_searchForm.scss';
 
-export function searchForn(){
+export function SearchForm(): JSX.Element{
 return <form id="search-form" className="search-form">
       <div className="search-form__container">
         <input
@@ -14,7 +15,8 @@ return <form id="search-form" className="search-form">
           <svg className="search-form__icon" aria-label="Search">
             <use
               className="icon-search"
-              href="./images/icons.svg#icon-search"
+              href="../../img/icons.svg#icon-search"
+            
             ></use>
           </svg>
         </button>

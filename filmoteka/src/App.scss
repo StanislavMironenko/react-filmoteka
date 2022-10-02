@@ -1,0 +1,84 @@
+@import './sass/mixins/_breakpoints.scss';
+.App {
+  text-align: center;
+}
+
+body.on-open-modal {
+  overflow: hidden;
+}
+
+body.open-registration-modal {
+  overflow: hidden;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: auto;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f87e2c;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff6b08;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #d85905;
+}
+
+
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-phone-only {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include for-tablet-up{
+    width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  @include for-desktop-only{
+    width: 1280px;
+  }
+}

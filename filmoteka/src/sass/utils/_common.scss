@@ -1,6 +1,5 @@
-.App {
-  text-align: center;
-}
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
 
 body.on-open-modal {
   overflow: hidden;
@@ -41,6 +40,10 @@ img {
   width: 6px;
   height: auto;
 
+  @media (max-width: 480px) {
+    width: 3px;
+    height: auto;
+  }
 }
 
 ::-webkit-scrollbar-thumb {
@@ -56,14 +59,10 @@ img {
   background: #d85905;
 }
 
-
+// ::-webkit-scrollbar-track {
+//   background: #e2e1e7;
+// }
 
 ::-webkit-scrollbar-corner {
   background: transparent;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;   
-  width: 1280px;
-  
 }

@@ -1,0 +1,76 @@
+@import '../utils/variables';
+@import '../mixins/breakpoints';
+
+.search-form__container {
+    margin: 0 auto;
+
+    position: relative;
+
+    width: 100%;
+    max-width: 336px;
+
+    text-align: center;
+
+    @include for-desktop-only {
+        max-width: 394px;
+    }
+}
+
+.search-form__input {
+    padding: 4px;
+    width: 100%;
+
+    color: $secondary-text-color;
+    background-color: transparent;
+    border-color: $primary-border-color;
+    border-style: solid;
+    border-width: 0 0 0.5px;
+
+    outline: 0;
+
+    &:focus {
+        box-shadow: 0 1px;
+    }
+}
+
+.search-form__error {
+    display: none;
+
+    margin-top: 16px;
+    color: $error-text-color;
+    text-align: center;
+
+    @include for-tablet-up {
+        margin-top: 20px;
+    }
+}
+
+.search-form__btn {
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+
+    border: none;
+    cursor: pointer;
+
+    &:hover .search-form__icon {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.search-form__icon {
+    width: 12px;
+    height: 12px;
+}
